@@ -1,4 +1,4 @@
-function MiCarrito() {
+function micarrito() {
     return (
       <>
         
@@ -6,4 +6,4 @@ function MiCarrito() {
     );
   }
   
-  export default MiCarrito;
+  export default micarrito;

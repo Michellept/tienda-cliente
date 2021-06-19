@@ -1,13 +1,11 @@
-import DefaultNavbar from "components/DefaultNavbar"
 
-function MisPedidos() {
+
+function mispedidos() {
     return (
       <>
-        <DefaultNavbar>
-          
-        </DefaultNavbar>
+      
       </>
     );
   }
   
-  export default MisPedidos;
+  export default mispedidos;

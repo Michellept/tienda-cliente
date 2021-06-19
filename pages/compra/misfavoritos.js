@@ -1,4 +1,4 @@
-function MisFavoritos() {
+function misfavoritos() {
     return (
       <>
         
@@ -6,4 +6,4 @@ function MisFavoritos() {
     );
   }
   
-  export default MisFavoritos;
+  export default misfavoritos;
