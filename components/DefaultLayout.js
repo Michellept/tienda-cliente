@@ -13,7 +13,7 @@ function DefaultLayout(props) {
   return (
     <Col style={{ paddingLeft: 0, paddingRight: 0 }}>
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="/productos/index">
+        <Navbar.Brand href="/productos/menu">
           {" "}
           <a>
             <svg
@@ -31,24 +31,7 @@ function DefaultLayout(props) {
         </Navbar.Brand>
         <a></a>
 
-        <Nav className="mr-auto"></Nav>
-
-        <Form inline >
-          <FormControl type="text" placeholder="Buscar" className="mr-sm-2" />
-          <Button variant="outline-info">Buscar</Button>
-
-        </Form>
-      </Navbar>
-      <Navbar bg="light">
-        <NavDropdown title="Productos" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/productos/mujer">Mujer</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="/productos/hombre">Hombre</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-
-          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-        </NavDropdown>
+        <Nav className="mr-auto">
         <Nav.Link href="/compra/mispedidos">
           <a>
             <svg
@@ -64,7 +47,7 @@ function DefaultLayout(props) {
           </a>
           Pedidos
         </Nav.Link>
-        <Nav.Link></Nav.Link>
+    
         <Nav.Link href="/compra/micarrito">
           <a>
             <svg
@@ -100,7 +83,27 @@ function DefaultLayout(props) {
           Favoritos
         </Nav.Link>
 
-        <Form style={{ paddingLeft: 750 }} className="d-flex">
+        </Nav>
+
+        <Form inline >
+          <FormControl type="text" placeholder="Buscar" className="mr-sm-2" />
+          <Button variant="outline-info">Buscar</Button>
+
+        </Form>
+      </Navbar>
+      <Navbar bg="light">
+        <NavDropdown title="Productos" id="basic-nav-dropdown">
+          <NavDropdown.Item href="/productos/mujer">Mujer</NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="/productos/hombre">Hombre</NavDropdown.Item>
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+
+          <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+        </NavDropdown>
+        
+
+        <Form style={{ paddingLeft:1500 }} className="d-flex">
           <Button type="button" className="btn btn-light text-dark me-2">
             Acceder
           </Button>
